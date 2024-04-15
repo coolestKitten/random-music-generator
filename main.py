@@ -1,6 +1,7 @@
 import pysine as snd
 import random as rm
 
+## Frequenciy of each note in Hz
 note1 = 440.0
 note2 = 660.0
 note3 = 990.0
@@ -9,9 +10,25 @@ note5 = 2227.5
 note6 = 3341.25
 note7 = 5011.875
 
+## Control variables for movement 
+curr = 0
+next = 0
 
-## Transition matrix. Determines what is the probability of making a certain transition
-TransitionMatrix = [[0.5, 0.2, 0.3],[0.4, 0.2, 0.4],[0.2, 0.6, 0.2]]
+## Controls how many times the loop will occur
+tempControl = 0
+
+## Transition matrix. Determines what is the probability of moving from one node to the next
+TransitionMatrix = [
+    [0.2, 0.1, 0.1, 0.3, 0.1, 0.1, 0.1], 
+    [0.1, 0.1, 0.3, 0.1, 0.1, 0.2, 0.1],
+    [0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.3],
+    [0.1, 0.3, 0.1, 0.1, 0.2, 0.1, 0.1],
+    [0.1, 0.2, 0.1, 0.3, 0.1, 0.1, 0.1],
+    [0.3, 0.1, 0.1, 0.1, 0.2, 0.1, 0.1],
+    [0.1, 0.1, 0.2, 0.1, 0.1, 0.3, 0.1]
+]
+
+
 
 
 
