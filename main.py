@@ -1,5 +1,4 @@
 import pysine as snd
-import random as rm
 import numpy as np
 
 ## Frequenciy of each note in Hz
@@ -199,13 +198,3 @@ while (tempControl <= 21):
             pass
          
     tempControl += 1
-
-
-
-# snd.sine(frequency=440.0, duration=0.3) 
-# snd.sine(frequency=660.0, duration=0.3) 
-# snd.sine(frequency=990.0, duration=0.3)  
-# snd.sine(frequency=1485.0, duration=0.3) 
-# snd.sine(frequency=2227.5, duration=0.3) 
-# snd.sine(frequency=3341.25, duration=0.3) 
-# snd.sine(frequency=5011.875, duration=0.3) 
